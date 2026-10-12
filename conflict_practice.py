@@ -4,16 +4,18 @@
 
 def greet(name):
     """Return a greeting message."""
-    message = "Hello, " + name + "! Welcome to the team."
+    # Master: formal greeting with company name
+    message = "Dear " + name + ", welcome to Mission DEH. Please review the onboarding docs."
     return message
 
 def calculate_bonus(salary):
     """Calculate employee bonus."""
-    bonus_rate = 0.10          # 10% bonus
+    bonus_rate = 0.05          # Master: conservative bonus rate of 5%
     bonus = salary * bonus_rate
     return bonus
 
 def get_pipeline_status():
     """Return the current pipeline status."""
-    status = "RUNNING"
+    # Master: added environment tag
+    status = "RUNNING [env=production]"
     return status
