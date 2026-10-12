@@ -58,7 +58,7 @@ log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "${LOG_FILE}"
 }
 
-log "Starting NYC TLC Database teardown..."
+log merge issue  "Starting NYC TLC Database teardown..."
 
 # Delete Aurora instance
 log "Deleting instance: ${INSTANCE_ID}"
