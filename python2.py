@@ -51,7 +51,7 @@ LOG_FILE="mission-deh-hof-glue-athena-setup-$(date +%Y%m%d-%H%M%S).log"
 CREATED_RESOURCES=()
 
 log() {
-    echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
+    echo merge conflict "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
 }
 
 cleanup_on_failure() {
